@@ -7,13 +7,13 @@ on:
 
 jobs:
   unit-test:
-    name: Unit tests on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-18.04, windows-2019, macos-10.15]
+    name: Unit tests on linux
+    runs-on: ubuntu-latest
     steps:
-      # Set up Flutter.
+      - uses: actions/checkout@v1
+                - uses: actions/setup-java@v1
+                with:
+                  java-version: '17.x'
       - name: Clone repository
         uses: actions/checkout@v4
       - name: Set up Flutter
@@ -26,3 +26,8 @@ jobs:
       - run: flutter analyze
       - run: flutter format --set-exit-if-changed --dry-run .
       - run: flutter test
+      - run: flutter build apk
+      - uses: actions/upload-artifact@v1
+        with:
+          name: release-apk
+          path: build/app/outputs/apk/release/app-release.apk
