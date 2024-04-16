@@ -14,18 +14,15 @@ jobs:
         os: [ubuntu-18.04, windows-2019, macos-10.15]
     steps:
       # Set up Flutter.
-      - name: Clone Flutter repository with master channel
-        uses: subosito/flutter-action@v1.5.0
+      - name: Clone repository
+        uses: actions/checkout@v4
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
         with:
           channel: stable
-      - run: flutter doctor -v
-
-      - name: Get pub packages
-        uses: actions/checkout@v2
+          flutter-version-file: pubspec.yaml # path to pubspec.yaml
+      - run: flutter --version
       - run: flutter pub get
-
       - run: flutter analyze
-      - name: Ensure the Dart code is formatted correctly
-        run: flutter format --set-exit-if-changed --dry-run .
-      - name: Run Flutter unit tests
-        run: flutter test
+      - run: flutter format --set-exit-if-changed --dry-run .
+      - run: flutter test
