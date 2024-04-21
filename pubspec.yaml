@@ -35,6 +35,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/images/start/cat_1.png
   fonts:
     - family: Pretendard-100
       fonts:
