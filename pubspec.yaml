@@ -2,7 +2,7 @@ name: myaong
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: ">=3.3.3 <4.0.0"
 
 dependencies:
   flutter:
@@ -35,8 +35,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets: 
+  assets:
     - assets/images/start/cat_1.png
+    - assets/images/start/screen.png
+    - assets/images/start/checked.png
+
   fonts:
     - family: Pretendard-100
       fonts:
@@ -45,23 +48,23 @@ flutter:
       fonts:
         - asset: assets/fonts/pretendard/Pretendard-ExtraLight.otf
     - family: Pretendard-300
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-Light.otf
     - family: Pretendard-400
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-Regular.otf
     - family: Pretendard-500
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-Medium.otf
     - family: Pretendard-600
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-SemiBold.otf
     - family: Pretendard-700
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-Bold.otf
     - family: Pretendard-800
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-ExtraBold.otf
     - family: Pretendard-900
-      fonts: 
+      fonts:
         - asset: assets/fonts/pretendard/Pretendard-Black.otf
