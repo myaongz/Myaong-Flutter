@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myaong/views/main/main_page.dart';
+import 'package:myaong/router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home: MainPage(),
+      routeInformationParser: PageRouter.router.routeInformationParser,
+      routerDelegate: PageRouter.router.routerDelegate,
+      routeInformationProvider: PageRouter.router.routeInformationProvider,
     );
   }
 }
