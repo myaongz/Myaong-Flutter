@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:myaong/components/buttons/start_button.dart';
 
 class ThirdPage extends StatelessWidget {
@@ -56,10 +57,11 @@ class ThirdPage extends StatelessWidget {
                   ],
                 ),
               ),
-              const Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: StartButton(
                   text: '게속하기',
+                  pushPage: () => context.go('/'),
                 ),
               ),
             ],

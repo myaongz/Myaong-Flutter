@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:myaong/components/buttons/start_button.dart';
 
-class BeginPage extends StatelessWidget {
-  const BeginPage({super.key});
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,10 +59,11 @@ class BeginPage extends StatelessWidget {
                   ],
                 ),
               ),
-              const Align(
+              Align(
                 alignment: Alignment.bottomCenter,
                 child: StartButton(
                   text: '시작하기',
+                  pushPage: () => context.go('/second'),
                 ),
               ),
             ],
