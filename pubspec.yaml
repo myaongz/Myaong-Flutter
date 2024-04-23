@@ -39,6 +39,8 @@ flutter:
     - assets/images/start/cat_1.png
     - assets/images/start/screen.png
     - assets/images/start/checked.png
+    - assets/images/home/alert.png
+    - assets/images/home/home.png
 
   fonts:
     - family: Pretendard-100

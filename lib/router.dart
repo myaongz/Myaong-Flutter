@@ -9,6 +9,7 @@ class PageRouter {
   static const String _firstPage = "first";
   static const String _secondPage = "second";
   static const String _thirdPage = "third";
+
   static final GoRouter router = GoRouter(
     initialLocation: '/first',
     routes: [
@@ -27,7 +28,7 @@ class PageRouter {
           GoRoute(
             path: _thirdPage,
             builder: (context, state) => const ThirdPage(),
-          )
+          ),
         ],
       ),
     ],

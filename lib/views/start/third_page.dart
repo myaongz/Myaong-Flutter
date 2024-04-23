@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:myaong/components/buttons/start_button.dart';
+import 'package:myaong/utils/mediaquery.dart';
 
 class ThirdPage extends StatelessWidget {
   const ThirdPage({super.key});
@@ -50,8 +51,8 @@ class ThirdPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Image.asset(
                         'assets/images/start/checked.png',
-                        height: 150,
-                        width: 150,
+                        height: mediaHeight(context) / 6.2133333333,
+                        width: mediaWidth(context) / 2.8666666667,
                       ),
                     )
                   ],

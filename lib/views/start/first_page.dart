@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:myaong/components/buttons/start_button.dart';
+import 'package:myaong/utils/mediaquery.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -52,8 +53,8 @@ class FirstPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Image.asset(
                         'assets/images/start/cat_1.png',
-                        height: 250,
-                        width: 200,
+                        height: mediaHeight(context) / 3.728,
+                        width: mediaWidth(context) / 2.15,
                       ),
                     )
                   ],
