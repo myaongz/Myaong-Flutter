@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:myaong/components/buttons/start_button.dart';
+import 'package:myaong/utils/mediaquery.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
@@ -49,8 +50,8 @@ class SecondPage extends StatelessWidget {
                       alignment: Alignment.center,
                       child: Image.asset(
                         'assets/images/start/screen.png',
-                        height: 500,
-                        width: 425,
+                        height: mediaHeight(context) / 1.864,
+                        width: mediaWidth(context) / 1.01176470588,
                       ),
                     )
                   ],
