@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:myaong/components/buttons/start_button.dart';
+import 'package:myaong/widgets/buttons/start_button.dart';
 import 'package:myaong/utils/mediaquery.dart';
 
 class ThirdPage extends StatelessWidget {
