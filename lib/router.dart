@@ -1,11 +1,11 @@
 import 'package:go_router/go_router.dart';
-import 'package:myaong/views/home/home_page.dart';
+import 'package:myaong/views/main/main_page.dart';
 import 'package:myaong/views/start/first_page.dart';
 import 'package:myaong/views/start/second_page.dart';
 import 'package:myaong/views/start/third_page.dart';
 
 class PageRouter {
-  static const String _homePage = '/';
+  static const String _mainPage = '/';
   static const String _firstPage = "first";
   static const String _secondPage = "second";
   static const String _thirdPage = "third";
@@ -14,8 +14,8 @@ class PageRouter {
     initialLocation: '/first',
     routes: [
       GoRoute(
-        path: _homePage,
-        builder: (context, state) => const HomePage(),
+        path: _mainPage,
+        builder: (context, state) => const MainPage(),
         routes: [
           GoRoute(
             path: _firstPage,

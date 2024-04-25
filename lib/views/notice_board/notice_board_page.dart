@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class NoticeBoardPage extends StatelessWidget {
+  const NoticeBoardPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text(
-                        "MYAONG",
+                        "게시판",
                         style: TextStyle(
                           fontSize: 30,
                           fontFamily: 'Pretendard-800',
