@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:myaong/utils/font.dart';
 import 'package:myaong/widgets/buttons/start_button.dart';
 import 'package:myaong/utils/mediaquery.dart';
 
@@ -30,7 +31,7 @@ class FirstPage extends StatelessWidget {
                         "당신과 함께할 심리 상담가\n먀옹과 함께 해봐요",
                         style: TextStyle(
                           fontSize: 30,
-                          fontFamily: 'Pretendard-800',
+                          fontFamily: pretendard_800,
                         ),
                       ),
                     ),
@@ -40,7 +41,7 @@ class FirstPage extends StatelessWidget {
                         "귀여운 캐릭터와 놀아봐요!\n모든 과정은 암호화 되어 보관됩니다.",
                         style: TextStyle(
                           fontSize: 20,
-                          fontFamily: 'Pretendard-500',
+                          fontFamily: pretendard_500,
                           color: Color(0xffa7a7a7),
                           letterSpacing: -1,
                         ),

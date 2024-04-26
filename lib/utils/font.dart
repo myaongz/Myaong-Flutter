@@ -1,0 +1,9 @@
+const String pretendard_100 = "Pretendard-100";
+const String pretendard_200 = "Pretendard-200";
+const String pretendard_300 = "Pretendard-300";
+const String pretendard_400 = "Pretendard-400";
+const String pretendard_500 = "Pretendard-500";
+const String pretendard_600 = "Pretendard-600";
+const String pretendard_700 = "Pretendard-700";
+const String pretendard_800 = "Pretendard-800";
+const String pretendard_900 = "Pretendard-900";
