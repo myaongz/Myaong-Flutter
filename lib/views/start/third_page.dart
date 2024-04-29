@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:myaong/utils/font.dart';
 import 'package:myaong/widgets/buttons/start_button.dart';
 import 'package:myaong/utils/mediaquery.dart';
 
@@ -30,7 +31,7 @@ class ThirdPage extends StatelessWidget {
                         "모두 완료 되었어요",
                         style: TextStyle(
                           fontSize: 30,
-                          fontFamily: 'Pretendard-800',
+                          fontFamily: pretendard_800,
                         ),
                       ),
                     ),
@@ -40,7 +41,7 @@ class ThirdPage extends StatelessWidget {
                         "인증이 완료 되었습니다. \n이제 서비스를 이용 하실 수 있어요!",
                         style: TextStyle(
                           fontSize: 20,
-                          fontFamily: 'Pretendard-500',
+                          fontFamily: pretendard_500,
                           color: Color(0xffa7a7a7),
                           letterSpacing: -1,
                         ),

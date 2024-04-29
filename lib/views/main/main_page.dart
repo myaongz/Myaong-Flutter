@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myaong/utils/font.dart';
 import 'package:myaong/views/home/home_page.dart';
 import 'package:myaong/views/notice_board/notice_board_page.dart';
 
@@ -37,11 +38,11 @@ class _MainPageState extends State<MainPage> {
         iconSize: 30,
         selectedLabelStyle: const TextStyle(
           fontSize: 15,
-          fontFamily: 'Pretendard-800',
+          fontFamily: pretendard_800,
         ),
         unselectedLabelStyle: const TextStyle(
           fontSize: 15,
-          fontFamily: 'Pretendard-800',
+          fontFamily: pretendard_800,
         ),
         unselectedItemColor: const Color(0xffA7A7A7),
         items: const [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:myaong/utils/font.dart';
 import 'package:myaong/widgets/buttons/start_button.dart';
 import 'package:myaong/utils/mediaquery.dart';
 
@@ -30,7 +31,7 @@ class SecondPage extends StatelessWidget {
                         "문자 메시지를 보내주세요",
                         style: TextStyle(
                           fontSize: 30,
-                          fontFamily: 'Pretendard-800',
+                          fontFamily: pretendard_800,
                         ),
                       ),
                     ),
@@ -40,7 +41,7 @@ class SecondPage extends StatelessWidget {
                         "문자 메시지를 통해 휴대폰 본인 확인에\n이용됩니다. 문자의 내용을 수정없이 보내주세요.",
                         style: TextStyle(
                           fontSize: 20,
-                          fontFamily: 'Pretendard-500',
+                          fontFamily: pretendard_500,
                           color: Color(0xffa7a7a7),
                           letterSpacing: -1,
                         ),

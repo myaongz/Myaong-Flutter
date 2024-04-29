@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myaong/utils/font.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -22,7 +23,7 @@ class HomePage extends StatelessWidget {
                         "MYAONG",
                         style: TextStyle(
                           fontSize: 30,
-                          fontFamily: 'Pretendard-800',
+                          fontFamily: pretendard_800,
                         ),
                       ),
                       Image.asset(
