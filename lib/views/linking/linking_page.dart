@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:myaong/utils/font.dart';
 
 class LinkingPage extends StatelessWidget {
@@ -17,28 +18,26 @@ class LinkingPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      child: const Row(
-                        children: [
-                          Text(
-                            "링킹",
-                            style: TextStyle(
+                    const Row(
+                      children: [
+                        Text(
+                          "링킹",
+                          style: TextStyle(
+                            fontSize: 30,
+                            fontFamily: pretendard_800,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 32,
+                        ),
+                        Text(
+                          "친구",
+                          style: TextStyle(
+                              fontFamily: pretendard_600,
                               fontSize: 30,
-                              fontFamily: pretendard_800,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 32,
-                          ),
-                          Text(
-                            "친구",
-                            style: TextStyle(
-                                fontFamily: pretendard_600,
-                                fontSize: 30,
-                                color: Color(0xffa7a7a7)),
-                          ),
-                        ],
-                      ),
+                              color: Color(0xffa7a7a7)),
+                        ),
+                      ],
                     ),
                     Image.asset(
                       'assets/images/home/alert.png',
