@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:myaong/utils/font.dart';
 
 class LinkingPage extends StatelessWidget {
