@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myaong/utils/font.dart';
 import 'package:myaong/views/home/home_page.dart';
+import 'package:myaong/views/linking/linking_page.dart';
 import 'package:myaong/views/notice_board/notice_board_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -22,7 +23,7 @@ class _MainPageState extends State<MainPage> {
   final List<Widget> _page = [
     const HomePage(),
     const NoticeBoardPage(),
-    const HomePage(),
+    const LinkingPage(),
     const HomePage(),
   ];
 
